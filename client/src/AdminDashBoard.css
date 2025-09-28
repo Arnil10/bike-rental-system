@@ -1,0 +1,151 @@
+/* AdminDashBoard.css */
+
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f5f7;
+  color: #333;
+}
+
+/* Admin Dashboard Container */
+.admin-dashboard {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Sidebar */
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background-color: #2c3e50;
+  color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column; /* Ensures items are arranged vertically */
+  align-items: flex-start; /* Aligns items to the top-left */
+  justify-content: flex-start; /* Aligns items to the top */
+  height: 100vh; /* Ensures the sidebar takes full height */
+}
+
+.sidebar h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  text-align: center;
+  border-bottom: 1px solid #34495e;
+  padding-bottom: 10px;
+  width: 100%; /* Ensures it spans the sidebar width */
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Removes extra margin */
+  width: 100%; /* Ensures items span the sidebar width */
+}
+
+.sidebar ul li {
+  padding: 15px 10px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  text-align: left; /* Aligns text to the left */
+  width: 100%; /* Makes items span the sidebar width */
+}
+
+.sidebar ul li:hover {
+  background-color: #34495e;
+}
+
+.sidebar ul li.active {
+  background-color: #1abc9c;
+}
+
+
+/* Content Area */
+.content {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #ecf0f1;
+}
+
+/* Sections */
+section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+/* Responsive Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  text-align: left;
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+table th {
+  background-color: #34495e;
+  color: white;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Buttons */
+button {
+  background-color: #1abc9c;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #16a085;
+}
+
+button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .sidebar ul li {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  .content {
+    padding: 10px;
+  }
+
+  section {
+    padding: 15px;
+  }
+}

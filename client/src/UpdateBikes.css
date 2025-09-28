@@ -1,0 +1,95 @@
+/* UpdateBikes.css */
+.update-bikes-container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+  
+  .update-bikes-header {
+    text-align: center;
+    color: #333;
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .error-message, .success-message {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .error-message {
+    background-color: #ffcccc;
+    color: #cc0000;
+  }
+  
+  .success-message {
+    background-color: #ccffcc;
+    color: #008000;
+  }
+  
+  .bikes-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  .bikes-table th,
+  .bikes-table td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  .bikes-table th {
+    background-color: #333;
+    color: white;
+  }
+  
+  .bikes-table tr:nth-child(even) {
+    background-color: #f4f4f4;
+  }
+  
+  .bikes-table tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .price-input {
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .update-button {
+    padding: 8px 15px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .update-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .update-button:active {
+    background-color: #004085;
+  }
+  
+  .update-button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  

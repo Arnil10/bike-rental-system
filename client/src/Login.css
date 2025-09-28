@@ -1,0 +1,106 @@
+/* General Body Styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Login Container */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .login-box {
+    background-color: #111; /* Slightly lighter black */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+  }
+  
+  .login-box h1 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #ffc107; /* Golden yellow */
+  }
+  
+  /* Form Inputs */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center; /* Center elements inside form */
+  }
+  
+  label {
+    font-size: 14px;
+    color: #ccc; /* Lighter gray for labels */
+    text-align: left;
+    width: 100%; /* Stretch label to match input width */
+  }
+  
+  input {
+    width: 100%; /* Full width inputs */
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #222; /* Dark gray input background */
+    color: #fff; /* White text */
+  }
+  
+  input::placeholder {
+    color: #888; /* Placeholder text */
+  }
+  
+  /* Login Button */
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffc107; /* Golden yellow */
+    color: #000; /* Black text */
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .login-btn:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Sign Up and Admin Buttons */
+  .button-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .small-btn {
+    padding: 8px 12px; /* Smaller padding */
+    font-size: 12px; /* Smaller font */
+    border: none;
+    border-radius: 5px;
+    background-color: #444; /* Darker gray */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .small-btn:hover {
+    background-color: #555; /* Lighter gray on hover */
+  }
+  
